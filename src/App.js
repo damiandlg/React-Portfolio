@@ -1,9 +1,9 @@
 import React from 'react';
-import './app.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavMenu';
 import About from './components/About';
-import Resume from './components/Resume'
+import Resume from './components/Contact';
+
+import './app.css';
 
 function App() {
   return (
