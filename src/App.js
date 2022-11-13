@@ -1,22 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import NavMenu from './components/NavMenu';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import Project from './pages/Project';
+import './src/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavMenu';
+import About from './components/About';
+import Resume from './components/Resume'
 
-
-export default function App () {
+function App() {
   return (
-    <>
-    <Router>
-    <NavMenu />
-      <Home></Home>
-      <About></About>
-      <Project></Project>
-      <Contact></Contact>
-    </Router>
-    </>
+    <div>
+      <NavBar></NavBar>
+      <main>
+        <About></About>
+        <Resume></Resume>
+      </main>
+    </div>
   );
 }
+
+export default App;
